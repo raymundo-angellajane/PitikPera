@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="PitikPera-logo.png">
     <title>Pitik Pera</title>
 </head>
 <body>
@@ -18,6 +19,7 @@
         </div>
 
         <button class="flip-button" id="flipButton">FLIP COIN</button>
+
         <div class="result" id="result"></div>
 
         <div class="stats">
@@ -32,8 +34,18 @@
             </div>
         </div>
 
-    </div>
+        <div class="history">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3>Recent Flips</h3>
+                <button class="clear-button" id="clearButton">Clear History</button>
+            </div>
 
+            <div class="history-list" id="historyList">
+                <span style="color: #888; font-style: italic;">No flips yet</span>
+            </div>
+        </div>
+    </div>
+        
     <script src="script.js"></script>
 </body>
 </html>
