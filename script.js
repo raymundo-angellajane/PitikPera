@@ -51,7 +51,7 @@ function addToHistory(outcome) {
         history
             .map(
                 (r) => `
-                    <span class="history-item ${r[0].toUpperCase()}"></span>
+                    <span class="history-item ${r}">${r[0].toUpperCase()}</span>
                 `
             )
             .join("") ||
